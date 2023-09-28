@@ -6,7 +6,7 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
       {options.map((option, btnId) => {
         return (
           <li key={btnId}>
-            <FeedbackBtn onClick={e => onLeaveFeedback(e, option)}>
+            <FeedbackBtn onClick={() => onLeaveFeedback(option)}>
               {option}
             </FeedbackBtn>
           </li>
